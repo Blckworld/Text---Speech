@@ -7,3 +7,15 @@ This is a simple Flask web application that converts text to speech using the Go
 - Play the generated audio using HTML `<audio>` tag.
 - Simple user interface for text input.
 
+## Install the necessary dependencies:
+pip install -r requirements.txt
+
+## Run the Flask application:
+python app.py
+
+## Open your browser and go to http://127.0.0.1:5000/ to use the application.
+
+## Dependencies:
+   Flask 
+   gTTS (Google Text-to-Speech)
+   SpeechRecognition
