@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+</head>
+<body >
+    <h1 style="color: #333;">Text-to-Speech</h1>
+
+    <!-- Text-to-Speech Form -->
+    <section>
+        <h2>Convert Text to Speech</h2>
+        <form action="/text_to_speech" method="POST">
+            <label for="text">Enter Text:</label>
+            <input type="text" name="text" id="text" required>
+            <button type="submit">Convert to Speech</button>
+        </form>
+
+        {% if audio_path %}
+            <p><strong>Text:</strong> {{ text }}</p>
+            <audio controls>
+                <source src="{{ audio_path }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        {% endif %}
+    </section>
+    <hr>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+h1, h2 {
+    color: #333;
+}
+form {
+    margin: 20px 0;
+}
+input, button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+audio {
+    margin-top: 10px;
+}
+
+    </style>
+</body>
+</html>
