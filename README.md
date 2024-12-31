@@ -16,6 +16,6 @@ python app.py
 ## Open your browser and go to http://127.0.0.1:5000/ to use the application.
 
 ## Dependencies:
-   Flask 
-   gTTS (Google Text-to-Speech)
-   SpeechRecognition
+   Flask,  
+   gTTS (Google Text-to-Speech), 
+   SpeechRecognition.
