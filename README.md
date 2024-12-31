@@ -19,3 +19,6 @@ python app.py
    Flask,  
    gTTS (Google Text-to-Speech), 
    SpeechRecognition.
+
+
+![image](https://github.com/user-attachments/assets/0f3a0d4c-0eb3-4052-beab-f39a0b8f4ac0)
